@@ -1,6 +1,7 @@
 <template>
   <div class="conversation-list">
-    <h2 style="background-color:rgb(39, 39, 39); width: auto; color: white;" >Chat</h2>
+    <h2 style="background-color:rgb(39, 39, 39); width: 209PX
+    ; color: white;" >Chat</h2>
     <v-list class="listagem">
       <v-list-item
         v-for="contact in contacts"
@@ -83,7 +84,6 @@ export default {
 <style scoped>
 .conversation-list {
   width: 225px;
-  border: 1px solid #ccc;
   position: fixed;
   overflow:hidden;
   height:550px;
@@ -114,5 +114,7 @@ width: 100%;
 overflow-y: auto; /* Adicione uma barra de rolagem apenas ao conteúdo da lista */
 max-height: 100%;
 width: 209px;
-left: 0px;}
+left: 0px;
+
+}
 </style>

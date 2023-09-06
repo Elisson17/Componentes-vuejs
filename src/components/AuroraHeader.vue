@@ -1,6 +1,6 @@
-<template class="all">
-    <div >
-<v-app-bar theme="dark" absolute class="border-b" position="fixed">
+<template >
+    <div class="all">
+<v-app-bar theme="dark" absolute class="border-b"  position="fixed">
     <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
     <v-app-bar-title><v-img width="230px" height="auto" src="../assets/logo_aurora.png"></v-img></v-app-bar-title>

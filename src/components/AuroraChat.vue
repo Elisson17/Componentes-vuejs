@@ -1,5 +1,5 @@
 <template>
-    <v-container class="all">
+    <div class="all">
         
             
 
@@ -7,7 +7,7 @@
 
 
 
-    </v-container>
+    </div>
 </template>
 <script>
 export default {
@@ -18,7 +18,7 @@ export default {
 .all{
     height: 100%;
     margin:auto;
-    
+    width: 82.9%;
     float: right;
     border-style: solid;
     border-width: 2px;
