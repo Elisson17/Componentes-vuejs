@@ -1,26 +1,26 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template >
+  <v-app >
+    <v-main>
+   <AuroraHeader />
+   <AuroraContatos />
+   <AuroraChat />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AuroraHeader from './components/AuroraHeader.vue';
+import AuroraContatos from './components/AuroraContatos.vue';
+import AuroraChat from './components/AuroraChat.vue';
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    AuroraHeader,AuroraContatos,AuroraChat
+  },
+
+  data: () => ({
+    //
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
