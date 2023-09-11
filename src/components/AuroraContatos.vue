@@ -70,6 +70,11 @@ export default {
           name: "Irmão",
           lastMessage: "Me responda",
           image: require("../assets/auau.jpeg"),
+        }, {
+          id: 8,
+          name: "Deus"
+          , lastMessage: "Olá cria blz?"
+          ,image: require("../assets/auau.jpeg")
         }
         // Adicione mais contatos conforme necessário
       ],
@@ -85,14 +90,13 @@ export default {
 .conversation-list {
   width: 225px;
   position: fixed;
-  overflow:hidden;
-  height:550px;
+  overflow:auto;
+  height:560px;
   margin: auto;
 }
 
 .contact-item {
   display: flex;
-  align-items: center;
   cursor: pointer;
   padding: 10px;
   transition: background-color 0.3s ease;
@@ -111,8 +115,8 @@ width: 100%;
   margin-right: 10px;
 }
 .listagem{
-overflow-y: auto; /* Adicione uma barra de rolagem apenas ao conteúdo da lista */
-max-height: 100%;
+overflow-y: hidden; /* Adicione uma barra de rolagem apenas ao conteúdo da lista */
+
 width: 209px;
 left: 0px;
 
